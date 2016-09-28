@@ -16,3 +16,10 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
+$('.delete_empresa').bind('ajax:success', function() {  
+        $(this).closest('tr').fadeOut();
+});  
+
+$('.edit_empresa').bind('ajax:beforeSend', function() {  
+        console.log("hola");
+});  
